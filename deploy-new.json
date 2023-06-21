@@ -1,0 +1,68 @@
+{
+  "deploy": [
+    {
+      "class": "com.bespinglobal.opsnow.platform.sample.Server",
+      "options": {
+        "worker": false,
+        "config": {
+          "port": 8080
+        },
+        "multiThreaded": false,
+        "isolationGroup": null,
+        "ha": true,
+        "instances": 3,
+        "workerPoolName": "",
+        "workerPoolSize": 16,
+        "maxWorkerExecuteTime": 60000000000
+      }
+    },
+    {
+      "class": "com.bespinglobal.opsnow.platform.sample.Server1",
+      "options": {
+        "worker": false,
+        "config": {
+          "port": 8080
+        },
+        "multiThreaded": false,
+        "isolationGroup": null,
+        "ha": true,
+        "instances": 2,
+        "workerPoolName": "",
+        "workerPoolSize": 16,
+        "maxWorkerExecuteTime": 60000000000
+      }
+    },
+    {
+      "class": "com.bespinglobal.opsnow.platform.sample.Server2",
+      "options": {
+        "worker": false,
+        "config": {
+          "port": 8080
+        },
+        "multiThreaded": false,
+        "isolationGroup": null,
+        "ha": true,
+        "instances": 2,
+        "workerPoolName": "",
+        "workerPoolSize": 16,
+        "maxWorkerExecuteTime": 60000000000
+      }
+    },
+    {
+      "class": "com.bespinglobal.opsnow.platform.sample.Server3",
+      "options": {
+        "worker": false,
+        "config": {
+          "port": 8080
+        },
+        "multiThreaded": false,
+        "isolationGroup": null,
+        "ha": true,
+        "instances": 1,
+        "workerPoolName": "",
+        "workerPoolSize": 16,
+        "maxWorkerExecuteTime": 60000000000
+      }
+    }
+  ]
+}
