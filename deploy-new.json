@@ -47,6 +47,22 @@
         "workerPoolSize": 16,
         "maxWorkerExecuteTime": 60000000000
       }
+    },
+    {
+      "class": "com.bespinglobal.opsnow.platform.sample.Server3",
+      "options": {
+        "worker": false,
+        "config": {
+          "port": 8080
+        },
+        "multiThreaded": false,
+        "isolationGroup": null,
+        "ha": true,
+        "instances": 2,
+        "workerPoolName": "",
+        "workerPoolSize": 16,
+        "maxWorkerExecuteTime": 60000000000
+      }
     }
   ]
 }
