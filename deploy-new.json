@@ -1,7 +1,7 @@
 {
   "deploy": [
     {
-      "class": "com.bespinglobal.opsnow.platform.sample.Server",
+      "class": "com.opsnow.kubeops.deployer.test.PodsStreaming",
       "options": {
         "worker": false,
         "config": {
@@ -10,14 +10,14 @@
         "multiThreaded": false,
         "isolationGroup": null,
         "ha": true,
-        "instances": 3,
+        "instances": 1,
         "workerPoolName": "",
         "workerPoolSize": 16,
         "maxWorkerExecuteTime": 60000000000
       }
     },
     {
-      "class": "com.bespinglobal.opsnow.platform.sample.Server1",
+      "class": "com.opsnow.kubeops.deployer.test.NodesStreaming",
       "options": {
         "worker": false,
         "config": {
@@ -26,14 +26,14 @@
         "multiThreaded": false,
         "isolationGroup": null,
         "ha": true,
-        "instances": 2,
+        "instances": 1,
         "workerPoolName": "",
         "workerPoolSize": 16,
         "maxWorkerExecuteTime": 60000000000
       }
     },
     {
-      "class": "com.bespinglobal.opsnow.platform.sample.Server2",
+      "class": "com.opsnow.kubeops.deployer.test.NamespacesStreaming",
       "options": {
         "worker": false,
         "config": {
@@ -42,14 +42,14 @@
         "multiThreaded": false,
         "isolationGroup": null,
         "ha": true,
-        "instances": 2,
+        "instances": 1,
         "workerPoolName": "",
         "workerPoolSize": 16,
         "maxWorkerExecuteTime": 60000000000
       }
     },
     {
-      "class": "com.bespinglobal.opsnow.platform.sample.Server3",
+      "class": "com.opsnow.kubeops.deployer.test.DeploymentsStreaming",
       "options": {
         "worker": false,
         "config": {
@@ -58,7 +58,7 @@
         "multiThreaded": false,
         "isolationGroup": null,
         "ha": true,
-        "instances": 2,
+        "instances": 1,
         "workerPoolName": "",
         "workerPoolSize": 16,
         "maxWorkerExecuteTime": 60000000000
